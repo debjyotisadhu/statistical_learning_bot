@@ -174,10 +174,7 @@ if prompt:
                     st.error(
                         "⚠️ **API Key Missing**\n\n"
                         "Please set the GROQ_API_KEY environment variable to use this application.\n\n"
-                        "You can set it by running:\n"
-                        "```bash\n"
-                        "export GROQ_API_KEY='your-api-key-here'\n"
-                        "```"
+                        "Please provide GROQ_API_KEY on the sidebar"
                     )
                     st.stop()
                 
@@ -269,3 +266,4 @@ with st.sidebar:
     if st.button("🗑️ Clear Chat History", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
+
