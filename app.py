@@ -57,6 +57,7 @@ st.caption("RAG Application | Developed by Deb")
 with st.sidebar:
     # Check if API key is available
     groq_api_key = st.text_input("Enter GROQ API KEY")  # os.getenv("GROQ_API_KEY")
+    st.markdown("""[Get Your Groq Key Here](https://console.groq.com/keys)""")
 
     st.markdown("### 📬 Connect with me")
     st.markdown(
